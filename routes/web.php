@@ -20,3 +20,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/spotify', 'SpotifyConnectorController@index');
 Route::get('/spotify/connect', 'SpotifyConnectorController@connect');
+Route::get('/spotify/accept-auth', 'SpotifyConnectorController@acceptAuth');
