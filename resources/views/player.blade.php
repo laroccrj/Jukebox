@@ -15,16 +15,9 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
-            <h1>Spotify - accept auth</h1>
-            <h2>Params</h2>
-            <p>{{ $params }}</p>
-            <h2>Code</h2>
-            <p>{{ $code }}</p>
-            <h2>Auth response</h2>
-            <p>{{{ $response }}}</p>
-            <h2>User</h2>
+            <h1>Player</h1>
+            <p>User:</p>
             <p>{{{ $user }}}</p>
-            <p><a href="/spotify/connect/">Connect again</a></p>
         </div>
     </body>
 </html>
