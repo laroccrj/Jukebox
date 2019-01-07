@@ -81,6 +81,16 @@ class SpotifyApiService
     return $this->request(self::URL_ACCOUNTS, '/api/token', self::METHOD_POST, $params);
   }
 
+  public function refreshAuthToken($refreshToken)
+  {
+  	$params = [
+      'grant_type' => 'refresh_token',
+      'refresh_token' => $refreshToken
+    ];
+    
+  	return $this->request(self::URL_ACCOUNTS, '/api/token', self::METHOD_POST, $params);
+  }
+
   public function getCurrentUser($accessToken) 
   {
   	$headers = ['Authorization' => 'Bearer ' . $accessToken];
